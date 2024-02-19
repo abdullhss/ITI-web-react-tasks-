@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]:valid+ h2 ,input[type="email"]:valid+ h3 {
+            visibility:hidden;
+        }
+        
+        input[type="text"]:valid,input[type="email"]:valid{
+            border: "";
+        }
+        input[type="text"]:invalid,input[type="email"]:invalid{
+            border: 2px solid red;
+        }
+        input[type="text"]:invalid + h2,input[type="email"]:invalid + h3{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>change email address </h1>
+    <form>
+        <input type="text" required placeholder="username">
+        <h2>required username</h2>
+        <input type="email" required placeholder="Email">
+        <h3>required email address</h3>
+    </form>
+</body>
+</html>

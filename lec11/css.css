@@ -1,0 +1,23 @@
+#d{
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+}
+@keyframes drawDiagonal {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+#line{  
+    background-color: red;
+    position: absolute;
+    width: 5px;
+    height: 700px;
+    rotate: -45deg;
+    transform-origin: top left;
+  animation: drawDiagonal 5s linear forwards;
+}

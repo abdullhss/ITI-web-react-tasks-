@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+            <tr>
+                <td>name : </td>
+                <td><input type="text" name="name" placeholder="user name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Age : </td>
+                <td><input type="text" name="age" placeholder="age" id="age"></td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male"><img src="1.jpg"></label>
+                    
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female"><img src="2.jpg"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Color : </td>
+                <td>
+                    <select id="color">
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="blue">blue</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="save()">save</button>
+                </td>
+            </tr>
+    </table>
+    <script src="js.js"></script>
+</body>
+</html>
